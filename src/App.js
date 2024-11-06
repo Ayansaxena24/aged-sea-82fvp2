@@ -12,7 +12,8 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import Timer from "./Timer";
+import TimerMain from "./Timer";
+import Star from "./Star";
 
 //Timer function for respective timers
 // function Timer({ timer, updateTimer, onDelete }) {
@@ -171,7 +172,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Timer />} />
+        <Route path="/" element={<TimerMain />} />
+        <Route path="/star" element={<Star />} />
       </Routes>
     </BrowserRouter>
   );

@@ -42,7 +42,7 @@ const Timer = ({ id, running, onRemove }) => {
   );
 };
 
-export default TimerMain = () => {
+const TimerMain = () => {
   const [timerArray, setTimerArray] = useState([]);
 
   const addTimer = () => {
@@ -85,3 +85,4 @@ export default TimerMain = () => {
     </div>
   );
 };
+export default TimerMain;
