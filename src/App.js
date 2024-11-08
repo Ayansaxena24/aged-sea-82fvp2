@@ -14,6 +14,8 @@ import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import TimerMain from "./Timer";
 import Star from "./Star";
+import ProgressBar from "./ProgressBar";
+import PopOver from "./PopOver";
 
 //Timer function for respective timers
 // function Timer({ timer, updateTimer, onDelete }) {
@@ -174,6 +176,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<TimerMain />} />
         <Route path="/star" element={<Star />} />
+        <Route path="/progressBar" element={<ProgressBar />} />
+        <Route path="/popOver" element={<PopOver />} />
       </Routes>
     </BrowserRouter>
   );
